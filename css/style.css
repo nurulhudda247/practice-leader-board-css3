@@ -5,14 +5,31 @@
     margin: 0%;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+}
+
+body{
     background-color: #F3F1FF;
 }
 
-.container{
-    margin: 0 285px;
+.section-title{
+    margin-bottom: 33px;
+    font-size: 24px;
+    color: #562EFF;
 }
 
-nav, nav .nav-menu, nav .nav-items ul li, nav ul li img, nav .logo img, nav .nav-items ul, nav .logo a, .logo a h3, .nav-items ul li a{
+.container{
+    width: 870px;
+    background-color: #ffffff;
+    padding: 33px;
+    border-radius: 5px;
+}
+
+
+/* ****************************
+    Nav Section Starts Here
+****************************** */
+
+nav{
     background-color: #562EFF;
 }
 
@@ -21,7 +38,7 @@ nav .nav-menu{
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 8px 0;
+    padding: 8px 285px;
 }
 
 
@@ -50,4 +67,75 @@ nav .nav-items ul li a{
     text-decoration: none;
     color: #fff;
     padding-left: 36px;
+}
+
+
+/* ***********************************
+******  Top Section Starts Here  *****
+************************************ */
+
+main{
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 29px;
+}
+
+.top-players .players{
+    display: flex;
+    align-items: center;
+}
+
+.top-players .players .player-img{
+    width: 56px;
+    margin-right: 10px;
+}
+
+.top-players .players .player-name{
+    font-size: 18px;
+}
+
+hr{
+    margin: 30px 0;
+    background-color: #D1D1D1;
+    height: 2px;
+}
+
+/* *********************************
+    Top Blog Section Starts Here
+*********************************** */
+
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 29px;
+    grid-row-gap: 26px;
+}
+
+.blogs article{
+    display: flex;
+}
+
+.blogs article img{
+    width: 177px;
+    margin-right: 10px;
+}
+
+.blogs .blog-info h3{
+    font-size: 18px;
+}
+
+.blogs .blog-info p{
+    font-size: 14px;
+}
+
+.blogs .blog-info span{
+    color: #562EFF;
 }
