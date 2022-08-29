@@ -22,6 +22,7 @@ body{
     background-color: #ffffff;
     padding: 33px;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 
@@ -138,4 +139,72 @@ hr{
 
 .blogs .blog-info span{
     color: #562EFF;
+}
+
+/* ******************************
+    Course Section Starts Here
+*********************************/
+
+.course{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5px;
+}
+
+.course .course-card{
+    padding: 10px;
+    background-color: rgba(243, 243, 243, 0.276);
+    border-radius: 5px;
+}
+
+.course .course-card img{
+    width: 224px;
+}
+
+.course .course-title{
+    font-size: 18px;
+}
+
+.course .course-card .aurthor{
+    font-size: 14px;
+    color: #ED6B4F;
+}
+
+.course .course-card .rating-duration{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course .course-card .ratings{
+    display: flex;
+    align-items: center;
+}
+
+.course .course-card .rating-duration i{
+    color: #FFC014;
+    margin-right: 5px;
+}
+
+.course .course-card .rating-duration .ratings p{
+    color: #A2A2A2;
+}
+
+.course .course-card .rating-duration .empty{
+    color: #AEAEAE;
+}
+
+.course .course-card .rating-duration .duration{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    padding: 2px 5px;
+    color: #FF4A60;
+    background: #FEE5DF;
+    border-radius: 14.6913px;
+}
+
+.course .course-card .rating-duration .duration i{
+    margin-right: 5px;
+    color: #FF4A60;
 }
